@@ -7,13 +7,14 @@ Template Name: Archive-outdoor
 <main>
 
       
-    <?php $paged = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1 ;  ?>
+    <?php $paged = (get_query_var( 'paged' )) ? get_query_var( 'paged' ) : 1 ;  ?>
     <?php $loop  = new WP_Query(array(
-        "paged" => $paged,
         "post_type" => "outdoor",
         "posts_per_page" => 6,
+        "paged" => $paged,
         "post_status" => "publish"
       ));
+      query_posts($loop);
 
       ?>
    <div class="container">
@@ -59,22 +60,25 @@ Template Name: Archive-outdoor
 
               <?php endwhile; ?>
 
-              <?php echo '<div class="text-center">'.paginate_links(array(
+
+            <?php echo '<div class="text-center">'.paginate_links(array(
                                                 'total' => $loop -> max_num_pages
                                               )); ?>
+
               <?php endif; ?>
 
             <div class="list-btn">
               <a href="<?php echo get_permalink( HOME );?> ">TOPへ</a>
             </div>
         
+<!-- <?php $post_type = get_post_type();
 
+ echo 'Post Type: ' . $post_type; ?> -->
         </div>
       </div>
     </div>
   </div>
 
-  <?php echo get_page_template(); ?>
 </main>
 
 

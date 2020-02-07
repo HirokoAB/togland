@@ -25,6 +25,7 @@ function create_post_type() {
 		'public' => true,
 		'menu_position' => 6,
 		'has_archive' => true,
+		'rewrite'     => array( 'slug' => 'outdoor_ivent' ),
 		)
 	);
 }
@@ -132,7 +133,7 @@ function myscripts(){
 
 
 	}elseif(is_page( 'daiary' ) || is_post_type_archive( 'daiary' )){
-			wp_enqueue_script( 'jquery.min.js',get_template_directory_uri	().'/lib/assets/js/jquery.min.js',);
+			wp_enqueue_script( 'jquery.min.js',get_template_directory_uri	().'/lib/assets/js/jquery.min.js');
 			wp_enqueue_script( 'daiary.js',get_template_directory_uri() . '/js/daiary.js',
 			array(),
     		false,
@@ -153,10 +154,11 @@ function mystyle(){
 			wp_enqueue_style( 'reset', get_template_directory_uri() . '/css/reset.css' );
 			wp_enqueue_style( 'bootstrap.min.css', get_template_directory_uri() . '/lib/bootstrap-4.3.1-dist/css/bootstrap.min.css' );
 
-	if(is_home() || is_post_type_archive( 'outdoor' ) || is_singular('outdoor')){
+	if(is_home() || is_page( 14 ) || is_singular('outdoor')){
 			wp_enqueue_style( 'owl.carousel.css', get_template_directory_uri() . '/lib/assets/css/owl.carousel.css' );
 			wp_enqueue_style( 'owl.theme.default.css', get_template_directory_uri() . '/lib/assets/css/owl.theme.default.css' );
 			wp_enqueue_style( 'outdoor_style.css', get_template_directory_uri() . '/css/outdoor_style.css', array(), '1.0.3' );
+
 
 	}elseif(is_post_type_archive( 'daiary' )){
 			wp_enqueue_style( 'daiary.css',get_template_directory_uri() . '/css/daiary.css' );
