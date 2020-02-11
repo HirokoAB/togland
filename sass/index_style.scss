@@ -6,7 +6,6 @@ body {
   overflow: hidden;
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
   border: none;
@@ -356,7 +355,7 @@ video {
     margin-top: 10px;
     width: 100%;
   }
-  .index,.item_up {
+  .index, .label, .item_up {
     display: none;
   }
   .label_sec, .item_up_2 {
