@@ -356,7 +356,7 @@ video {
     margin-top: 10px;
     width: 100%;
   }
-  .index,.item_up {
+  .index, .label, .item_up {
     display: none;
   }
   .label_sec, .item_up_2 {
