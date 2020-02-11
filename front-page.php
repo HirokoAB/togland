@@ -75,10 +75,14 @@
 
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/app.js"></script>
+<!-- <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/app.js"></script> -->
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.jmap.min.js"></script>
 <script>
-        $('img[usemap]').jMap();
+
+        $(window).on('load', function(){
+     $("img[usemap]").jMap();
+});
+    
 </script>
 
 </body>
