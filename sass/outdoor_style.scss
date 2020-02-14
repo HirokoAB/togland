@@ -1,13 +1,13 @@
 @charset "UTF-8";
 @import url(reset.css);
-@import url("https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c&display=swap");
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c&display=swap');
 body {
   margin-top: 0;
   font-family: 'Noto Sans JP', "Yu Gothic", "YuGothic", "Hiragino Kaku Gothic Pro", "Meiryo", verdana, "Osaka", "MS PGothic", Sans-Serif;
   background-color: #ECECEC;
   background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(0.25, #F9F9F9), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, #F9F9F9), color-stop(0.75, #F9F9F9), color-stop(0.75, transparent), to(transparent));
   background-size: 14px 14px;
-  color: #1a1a1a;
+  color:#1a1a1a;
 }
 
 body,
@@ -101,13 +101,9 @@ img {
   background: #1a1a1a;
   margin-top: 5px;
 }
-
-.yellow {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, yellow));
-  background: -webkit-linear-gradient(transparent 50%, yellow 50%);
+.yellow{
   background: linear-gradient(transparent 50%, yellow 50%);
 }
-
 .img_box {
   width: 100vw;
   height: auto;
@@ -139,7 +135,7 @@ img {
 #timer {
   position: absolute;
   color: white;
-  /*  font-family: "M PLUS Rounded 1c ";*/
+/*  font-family: "M PLUS Rounded 1c ";*/
   max-width: 500px;
   text-align: center;
   margin-top: -1%;
@@ -153,80 +149,54 @@ img {
 }
 
 .event-img {
-  position: relative;
-  /* 相対位置指定 */
+  position:   relative; /* 相対位置指定 */
 }
-
 .event-img .caption {
-  font-size: 200%;
-  text-align: center;
-  padding-top: 30%;
-  color: #fff;
-  font-weight: 500;
+  font-size:    200%;
+  text-align:     center;
+  padding-top:30%;
+  color:      #fff;
+  font-weight:500;
 }
-
 .event-img .mask {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  /* 絶対位置指定 */
-  top: 0;
-  left: 0;
-  opacity: 0;
-  /* マスクを表示しない */
-  background-color: rgba(0, 0, 0, 0.4);
-  /* マスクは半透明 */
+  width:      100%;
+  height:     100%;
+  position:   absolute; /* 絶対位置指定 */
+  top:      0;
+  left:     0;
+  opacity:    0;  /* マスクを表示しない */
+  background-color: rgba(0,0,0,0.4);  /* マスクは半透明 */
   -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+  transition:   all 0.2s ease;
 }
-
 .event-img:hover .mask {
-  opacity: 1;
-  /* マスクを表示する */
+  opacity:    1;  /* マスクを表示する */
 }
-
-.tog-map > img {
-  width: 100%;
-  margin: auto;
+.tog-map > img{
+  width:100%;
+  margin:auto;
 }
 
 .fes-discription {
   font-weight: 500;
   line-height: 1.7;
-  margin-top: 50px;
+  margin-top:50px;
 }
 
-.outdoor-content {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+.outdoor-content{
+  align-items:center;
+  justify-content:center;
 }
 
 .yycountdown-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
 }
-
-.yy_upper, .yy_btm {
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
+.yy_upper, .yy_btm{
+  align-items:baseline;
 }
-
 .yyc-day-text, .yyc-hou-text,
 .yyc-min-text, .yyc-sec-text {
   font-size: 1rem;
@@ -397,31 +367,28 @@ img {
 }
 
 @media screen and (max-width: 480px) {
-  #timer {
-    margin-top: -15px;
+  #timer{
+    margin-top:-15px;
   }
   #yy-box {
-    margin-top: -5px;
+    margin-top:-5px;
   }
-  .timer_title {
-    font-size: 20px;
+  .timer_title{
+    font-size:20px;
   }
   .yy_upper > span,
   .yy_btm > span {
-    font-size: 33px;
-    position: relative;
+    font-size:33px;
+    position:relative;
   }
-  .sub-title > h1 {
-    font-size: 20px;
+  .sub-title > h1{
+    font-size:20px;
   }
-  .outdoor-content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+  .outdoor-content{
+    flex-direction:column;
   }
   .tog-map > img {
-    margin-top: 20px;
+    margin-top:20px;
   }
   .single-upper {
     padding: 0;

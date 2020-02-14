@@ -15,7 +15,7 @@ Template Name: Home Page
 		<div class="img_box">
 
 				<img src="<?php echo get_template_directory_uri(); ?>/img/logo_white_3.svg" alt="">
-				<div id="timer" class="container">
+				<div id="timer" class="container yy-box">
 					<div>
 						<div class="timer_title">開催まであと</div>
 					</div>
@@ -36,12 +36,42 @@ Template Name: Home Page
 				<div class="owl-carousel owl-theme owl-loaded col-10 margin-auto">
 				    <div class="owl-stage-outer">
 				        <div class="owl-stage">
-				            <div class="owl-item"><img src="<?php echo get_template_directory_uri(); ?>/img/altimet.jpg" alt="" ></div>
-				            <div class="owl-item"><img src="<?php echo get_template_directory_uri(); ?>/img/tent.jpg" alt="" ></div>
-				            <div class="owl-item"><img src="<?php echo get_template_directory_uri(); ?>/img/kupp.jpg" alt="" ></div>
-				            <div class="owl-item"><img src="<?php echo get_template_directory_uri(); ?>/img/baum.jpg" alt="" ></div>
-				            <div class="owl-item"><img src="<?php echo get_template_directory_uri(); ?>/img/naturegame.jpg" alt="" ></div>
-				            <div class="owl-item"><img src="<?php echo get_template_directory_uri(); ?>/img/smork.jpg" alt="" ></div>
+				            <div class="owl-item event-img">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/altimet.jpg" alt="" >
+				            	<div class="mask">
+				            		<div class="caption">アルティメット</div>
+				            	</div>
+							</div>
+				            <div class="owl-item event-img">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/tent.jpg" alt="" >
+				            	<div class="mask">
+				            		<div class="caption">テント展示会</div>
+				            	</div>
+							</div>
+				            <div class="owl-item event-img">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/kupp.jpg" alt="" >
+				            	<div class="mask">
+				            		<div class="caption">KUPP</div>
+				            	</div>
+							</div>
+				            <div class="owl-item event-img">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/baum.jpg" alt="" >
+				            	<div class="mask">
+				            		<div class="caption">バームクーヘン作り</div>
+				            	</div>
+							</div>
+				            <div class="owl-item event-img">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/naturegame.jpg" alt="" >
+				            	<div class="mask">
+				            		<div class="caption">ネイチャーゲーム</div>
+				            	</div>
+							</div>
+				            <div class="owl-item event-img">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/smork.jpg" alt="" >
+				            	<div class="mask">
+				            		<div class="caption">薫製教室</div>
+				            	</div>
+							</div>
 				        </div>
 				 	</div>	
 				    <!-- <div class="owl-dots"> -->
@@ -52,6 +82,29 @@ Template Name: Home Page
 				</div>
 			</div>
 		</div>
+
+		<div class="row content midddle-content about-tnp">
+			<div class="col-sm- sub-title">
+				<p><h1>神割崎感謝祭アウトドアフェスタとは？</h1></p>	
+			</div>
+			<div class="flex col-12 outdoor-content">
+			<div class="col-sm-6 fes-discription margin-auto">
+				<p>昨年から南三陸町戸倉地区にある神割キャンプ場にて開催しているイベント。</p><br>
+				<p>キャンプ場を利用してくださるお客様や住民の方への感謝の気持ちをお届けするために、</p>
+				<p>「食べる」「遊ぶ」「体験する」をキーワードに、地元ワインや飲食店の出店の他、KUPPやアルティメットなどの野外で遊び、ロープワークやバーバリウム作りなどの体験イベントなど、皆様に楽しんでいただけるイベントを準備しております。</p><br>
+				<p><span class="yellow">そして、今年のテーマは"アウトドア"！</span></p><br>
+				<p>当日はWILD-1さんによるテントの展示会も予定しています。</p>
+				
+				
+			</div>
+
+			<div class="tog-map col-sm-4">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/togura_map.png" alt="" >
+			</div>
+
+		</div>	
+		</div>
+
 
 			<!-- ブログコンテンツの表示 	-->
 		<div class="row content blog-content">
