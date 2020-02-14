@@ -20,7 +20,7 @@ Template Name: Archive-outdoor
    <div class="container">
       <div class="row">
         <div class="col-10 margin-auto base">
-          <h1 class="text-center text-six">ブログ記事一覧</h1>
+          <h1 class="text-center text-six archive-title">ブログ記事一覧</h1>
 
           <?php
           if($loop->have_posts() ): while($loop->have_posts()) : $loop->the_post();?>
@@ -70,10 +70,7 @@ Template Name: Archive-outdoor
             <div class="list-btn">
               <a href="<?php echo get_permalink( HOME );?> ">TOPへ</a>
             </div>
-        
-<!-- <?php $post_type = get_post_type();
 
- echo 'Post Type: ' . $post_type; ?> -->
         </div>
       </div>
     </div>

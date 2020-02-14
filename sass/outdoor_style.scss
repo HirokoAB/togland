@@ -4,10 +4,7 @@
 body {
   margin-top: 0;
   font-family: 'Noto Sans JP', "Yu Gothic", "YuGothic", "Hiragino Kaku Gothic Pro", "Meiryo", verdana, "Osaka", "MS PGothic", Sans-Serif;
-  background-color: #ECECEC;
-  background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(0.25, #F9F9F9), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, #F9F9F9), color-stop(0.75, #F9F9F9), color-stop(0.75, transparent), to(transparent));
-  background-size: 14px 14px;
-  color:#1a1a1a;
+  color:#1A1A1A !important;
 }
 
 body,
@@ -29,7 +26,8 @@ footer {
 /*↓リンクの下線はなし、マウスオンで下線あり*/
 a {
   text-decoration: none;
-  color: black !important;
+  color:#1A1A1A !important;
+
 }
 
 a:hover {
@@ -90,9 +88,15 @@ img {
 
 .sub-title {
   margin: 20px auto 20px;
-  text-align: center;
+  display:flex;
+  flex-direction:column;
 }
 
+.sub-title > h1{
+    display:inline;
+    font-size:1.5rem;
+    text-align:center;
+}
 .sub-title::after {
   content: '';
   display: block;
@@ -227,9 +231,9 @@ img {
   width: 100%;
   background: #cccccc;
   margin-top: 10px;
-}
+  }
 
-.post-title, .post-date,
+.post-date,
 .post-excerpt, .post-more,
 .post-content {
   margin-bottom: 10px;
@@ -237,19 +241,23 @@ img {
 
 .post-date {
   color: gray;
+  margin-top:2px;
+  padding-left:32px;
 }
 
 .post-title > h2 {
-  color: black !important;
   font-size: 1.5rem;
   font-weight: 700;
 }
 
 .post-thumbnail > img {
   width: 100%;
-  height: auto;
+  height:50vh;
   max-height: 800px;
   margin-bottom: 50px;
+}
+.post-excerpt{
+  line-height:1.7;
 }
 
 .post-excerpt::before,
@@ -257,6 +265,7 @@ img {
   content: '"';
   font-family: "";
   font-size: 1.3rem;
+  font-weight:500;
 }
 
 .post-more {
@@ -298,7 +307,12 @@ img {
   padding: 5px;
   margin-top: 30px;
 }
-
+.pre_text{
+  margin-right:2px
+}
+.next_text{
+  margin-left:2px;
+}
 .pre_text::after {
   content: '';
   width: 20px;
@@ -412,6 +426,38 @@ img {
   hr {
     margin: 0.5em 0;
   }
+  article{
+    padding-top:30px;
+  }
+  .archive-container{
+    flex-direction: column;
+  }
+  .post-entry{
+    margin-top:10px;
+    line-height:1.7rem;
+  }
+  .post-title{
+    font-size:1.2rem;
+  }
+  .post-more{
+    font-size:0.8rem;
+  }
+  .post-thumbnail > img {
+  margin-bottom:20px;
+  height:30vh;
+}
+  .archive-title{
+    font-weight:400;
+    font-size:1.2rem;
+  }
+  .nav-upper{
+    margin-bottom:20px;
+  }
+
+  .nav-box{
+    font-size:0.6rem;
+  }
+
+
 }
 
-/* ハンバーガーメニューここまで */
