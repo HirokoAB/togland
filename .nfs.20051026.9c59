@@ -42,56 +42,6 @@
 						</div>
 				</div>
 			</div>
-			<map name="tgitem">
- <area onFocus="this.blur();" shape="circle" coords="174,313,89" href="#" alt="" />
-
-</map>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 					<map name="tgitem">
 					  <area onFocus="this.blur();" shape="rect" coords="64,70,78,86" href="https://www.tamipack.jp/" alt="たみ子の海パックホームページへ遷移" target="_blank" />
