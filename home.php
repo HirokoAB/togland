@@ -27,7 +27,8 @@ Template Name: Home Page
 	<div class="container">	
 		<div class="row content upper-conteiner">
 			<div class="sub-title">
-				<p><h1>Event Photo<br>こんなことやります</h1></p>
+				<h1>EVENT PHOTO</h1>
+				<h1>こんなことやります</h1>
 
 			</div>
 
@@ -88,7 +89,7 @@ Template Name: Home Page
 				<p><h1>神割崎感謝祭アウトドアフェスタとは？</h1></p>	
 			</div>
 			<div class="flex col-12 outdoor-content">
-			<div class="col-sm-6 fes-discription margin-auto">
+			<div class="col-sm-6 fes-discription">
 				<p>南三陸町戸倉エリアには、たくさんの自然の魅力があります。</p>
 				<br>
 				<p>豊穣の海からは天皇杯に輝く戸倉っこ牡蠣の恵みがあり、大空にはシベリアから越冬に飛来した勇猛なオオワシが舞い、川には秋サケが産卵に回遊し遡上します。</p>
@@ -111,11 +112,12 @@ Template Name: Home Page
 			<!-- ブログコンテンツの表示 	-->
 		<div class="row content blog-content">
 			<div class="sub-title">
-		 		<p><h1>INFOMATION<br>毎日更新中</h1></p>
+		 		<h1>INFOMATION</h1>
+		 		<h1>随時更新中</h1>
 		 	</div>
 
 			<div class="col-12">
-				<div class="col-10 margin-auto">
+				<div class="col-sm-10 margin-auto">
 				 		<?php get_template_part('loop' , 'blog'); ?>
 				 	<div class="see-more text-right text-six">
 						<a href="<?php echo get_permalink( BLOG );?>"><p><i class="fas fa-map-signs"><span class="mgn-3"></span></i>SEE MORE BLOG! ブログの一覧 ▶︎</p></a>

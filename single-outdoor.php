@@ -1,11 +1,10 @@
 <?php get_header(); ?>
 
-<article style="padding-top: 100px; padding-bottom:100px;" class="single-base">
+<article style="padding-top: 50px; padding-bottom:100px;" class="single-base">
 	<div class="container">
 		<div class="row"_>
-			<div class="col-10 base margin-auto" style="margin-top:0px;">
-				<div class="drink"></div>
-				<div class="col-8 margin-auto">
+			<div class="col-sm-12 base margin-auto" style="margin-top:0px;">
+				<div class="col-sm-10 margin-auto">
 
 
 
@@ -34,7 +33,7 @@
 			              	</div>
 
 			        <?php endif;?>
-							<div class="text-center nav-box ">
+							<div class="text-center nav-box nav-upper">
 				              <span class="pre_text" >
 				                <?php previous_post_link('%link','< 前へ'); ?>
 				              </span>
@@ -43,7 +42,7 @@
 				              </span>
 				          	</div>
 				          	
-				          	<div class="text-center nav-box">
+				          	<div class="text-center nav-box link-archive">
 								<a href="<?php echo get_permalink( BLOG );?>"><i class="fas fa-tree"></i><span class="mgn-3"></span>ブログの一覧へ</a>
 							</div>		
 				</div>
