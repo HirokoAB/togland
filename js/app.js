@@ -1,25 +1,4 @@
-//メニューのハンバーガー
-// jQuery(function($) {
 
-//   //ドロワーメニュー
-//   $('.js-hamburger').on('click', function(){
-//     let isActive = $(this).hasClass('on');
-//     toggleDrower(isActive);
-//   });
-
-//   //ハンバーガーメニューでドロップダウン
-//   function toggleDrower(isActive) {
-//     $('.js-hamburger')
-//     if (isActive) {
-//       $('#drower-bg').fadeOut(600);
-//     } else {
-//       $('#drower-bg').fadeIn(600);
-//     }
-//     $('.js-hamburger').toggleClass('on');
-//     $('.js-drower').toggleClass('on');
-//   }
-
-// });
 
 
 //スライダーのJS
@@ -28,6 +7,27 @@
    $("#slider1").owlCarousel();
  
  });
+
+$(function(){
+    $('.owl-carousel').owlCarousel({
+            items: 4,   //表示する項目数
+            responsive : {　//レスポンシブ対応
+            // ブレイクポイント 0以上
+            0 : {
+                items : 1,
+            },
+            // ブレイクポイント 480以上
+            480 : {
+                items : 2,
+            },
+            // ブレイクポイント 768以上
+            768 : {
+                items : 2,
+            }
+        }
+        })
+});
+
 /////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////
 /////////////////イベントカウントダウンのjs//////////////////////
@@ -53,41 +53,6 @@ $('#yy-box').find('.yyc-min , .yyc-min-text,.yyc-sec,.yyc-sec-text').wrapAll('<d
 
 
 
-
-
-
-
-
-
-
-//yy-dayの外側にfixlemのdivタグをつける
-// fixrap.outerHTMl = "<div>" + fixrap.outerHTML + "</div>";
-// console.log(fixrap.outerHTML);
-// fixrap.insertBefore(a.firstChild);
-
-
-
-
-
-
-
-
-
-//fixするためのdivタグを作成
-// const fixelem = document.createElement('div');
-//fixするためのクラスを追加
-// fixelem.classList.add("fix");
-
-
-
-
-
-/////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////
-/////////////////////////////indexのjs///////////////////////
-////////////////////////////////////////////////////////////
-setInterval("goFlash()",9000);
-
 function goFlash() {
     $('.keybox').addClass('vertical_sec');
     setTimeout("removeFlash()",500);
@@ -107,38 +72,4 @@ $(function () {
 });
 
 
-
-// function cover_image(){
-
-//  var ww = $(window).width();
-
-//  if (ww < 400){
-//    var elem = document.createElement("img");
-
-  
-//    elem.src = "assets/img/yoko_guide.jpg";
-//    elem.style.position = "absolute";
-//    elem.className = "cover";
-
-//    document.getElementById("cover_img").appendChild(elem);
-
-//  }else if(ww > 300){
-//    var box = document.getElementById("cover_img");
-//    var box = box.parentNode;
-//    box.removeChild(box);
-//  }
-// }
-// $(document).ready(function(){
-//  cover_image()
-// });
-// $(window).resize(function(){
-//  cover_image()
-// });
-
-// function add_flash(){
-//   var ww = $(window).width();
-//   if(ww < 400){
-//     $('.icon').addClass('flash');
-//   }
-// }
 
