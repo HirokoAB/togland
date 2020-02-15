@@ -107,8 +107,6 @@ Template Name: Home Page
 
 		</div>	
 		</div>
-
-
 			<!-- ブログコンテンツの表示 	-->
 		<div class="row content blog-content">
 			<div class="sub-title">
@@ -128,8 +126,6 @@ Template Name: Home Page
 
 	</div>			
 </section>
-
-
 	
 </main>
 <?php  get_footer();?>
