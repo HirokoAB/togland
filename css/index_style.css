@@ -346,7 +346,13 @@ video {
     top: -50px;
     left: 100px;
   }
-}
+/*  .key_1 {
+    display: none !important;
+  }
+  .key_2 {
+    display: inline-block !important;
+  }
+}*/
 
 @media screen and (max-width: 480px) {
   .map_container {
@@ -355,26 +361,5 @@ video {
   .base_img {
     margin-top: 10px;
     width: 100%;
-  }
-  .index, .label, .item_up {
-    display: none;
-  }
-  .label_sec, .item_up_2 {
-    display: block;
-  }
-  .item_up_2 {
-    width: 350px;
-    height: auto;
-  }
-  .item_up {
-    margin-top: -5px;
-  }
-  .item_dwn, .item {
-    margin-top: 3px;
-  }
-  .guide {
-    width: 80px;
-    top: -30px;
-    left: 50px;
   }
 }

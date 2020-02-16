@@ -75,18 +75,13 @@ Template Name: Home Page
 							</div>
 				        </div>
 				 	</div>	
-				    <!-- <div class="owl-dots"> -->
-<!-- 				        <div class="owl-dot active"><span></span></div> -->
-<!-- 				        <div class="owl-dot"><span></span></div>
-				        <div class="owl-dot"><span></span></div> -->
-				    <!-- </div> -->
 				</div>
 			</div>
 		</div>
 
 		<div class="row content midddle-content about-tnp">
 			<div class="col-sm- sub-title">
-				<p><h1>神割崎感謝祭アウトドアフェスタとは？</h1></p>	
+				<p><h1>神割崎キャンプ場感謝祭<br>南三陸アウトドアフェスタとは？</h1></p>	
 			</div>
 			<div class="flex col-12 outdoor-content">
 			<div class="col-sm-6 fes-discription">
@@ -98,7 +93,7 @@ Template Name: Home Page
 				<br>
 				<p>アウトドア活動とは、自然と深くふれあえる楽しい機会。</p>
 				<br>
-				<p>戸倉エリアがアウトドア活動のメッカとなることが、ネイチャーパーク実現へのメインルートであって、このフェスタ・感謝祭はその力強い歩みだしになるのです。ネイチャーパークへのキックオフと位置付けて、この南三陸アウトドアフェスタ/神割崎キャンプ場感謝祭を開催します。</p>	
+				<p>戸倉エリアがアウトドア活動のメッカとなることが、ネイチャーパーク実現へのメインルートであって、このフェスタ・感謝祭はその力強い歩みだしになるのです。ネイチャーパークへのキックオフと位置付けて、この神割崎キャンプ場感謝祭南三陸アウトドアフェスタを開催します。</p>	
 			</div>
 
 			<div class="tog-map col-sm-4">
