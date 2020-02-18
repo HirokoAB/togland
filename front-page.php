@@ -15,7 +15,7 @@
 <body>
 	<main>
 		<section>
-			<div class="video_wrappar">
+			<div class="wrappar">
 			
 				<div class="map_container">
 						<div  type="image/svg+xml" style="z-index: 1" class="map map_base">
@@ -24,16 +24,13 @@
 						<div  type="image/svg+xml" style="z-index: 2" class="map map eagle shake">
 							<img class=""src="<?php echo get_template_directory_uri(); ?>/img/map_eagle.svg" alt="戸倉ネイチャーパークトップページに表示しているサイトオオワシのイラスト">	
 						</div>
-<!-- 						<div  type="image/svg+xml" style="z-index: 6"  class="map compass">
-							<img class="" src="<?php echo get_template_directory_uri(); ?>/img/map_compass.svg" usemap="" alt="" />
-						</div> -->
-						<div  type="image/svg+xml" style="z-index:7" class="map keybox flash" id="">
-							<img class="key_1" src="<?php echo get_template_directory_uri(); ?>/img/map_keybox.svg" usemap="#tgitem" alt="" />
-							<a href="<?php echo get_permalink( HOME );?>"><img class="key_2" src="<?php echo get_template_directory_uri(); ?>/img/map_keybox.svg" alt="" /></a>
-							<!-- <img class="guide flash" src="<?php echo get_template_directory_uri(); ?>/img/guide_2.svg" alt="戸倉ネイチャーパークトップページに表示している同じサーバー上で公開しているサイトへ遷移する宝箱の画像"> -->
+
+						<div  type="image/svg+xml" style="z-index:7" class="map keybox flash" >
+							<img class="" id="key" src="<?php echo get_template_directory_uri(); ?>/img/map_keybox.svg" usemap="#tgitem" alt="" />
+							<a href="<?php echo get_permalink( HOME );?>"><img class="" id="key_2" src="<?php echo get_template_directory_uri(); ?>/img/map_keybox.svg" alt="" /></a>
 						</div>
 				</div>
-			</div>
+
 
 					<map name="tgitem">
 					  <area onFocus="this.blur();" shape="rect" coords="55,51,86,72" href="https://www.tamipack.jp/" alt="たみ子の海パックホームページへ遷移" target="_blank" />
@@ -47,12 +44,16 @@
 					  <area onFocus="this.blur();" shape="rect" coords="88,38,119,60" href="https://www.pref.miyagi.jp/soshiki/sz-seinen/" alt="志津川自然の家ホームページへ遷移" target="_blank" />
 					  <area onFocus="this.blur();" shape="rect" coords="3,104,52,148" href="<?php echo get_permalink( HOME );?> "alt="" target="_blank"/>
 					</map>
+<<<<<<< Updated upstream
 					</div>
+=======
+		</div>
+>>>>>>> Stashed changes
 			
 
-			</div>
+
 	</section> 
-	</main>
+</main>
 
 
 
@@ -68,12 +69,24 @@
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.rwdImageMaps.min.js"></script>
+<<<<<<< Updated upstream
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/app.js"></script>
 
 <!-- <script>
         $('img[usemap]').rwdImageMaps();
 
 </script> -->
+=======
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/index_app.js"></script>
+
+<script>
+        $(document).ready(function(e) {
+  $('img[usemap]').rwdImageMaps();
+});
+
+
+</script>
+>>>>>>> Stashed changes
 
 </body>
 

@@ -280,6 +280,10 @@ img {
   padding-left: 32px;
 }
 
+.archive-row.archive-upper.post-date {
+  padding-left: 0px;
+}
+
 .post-title > h2 {
   font-size: 1.5rem;
   font-weight: 700;
@@ -390,8 +394,8 @@ img {
 }
 
 .archive-container img {
-  width: 200px;
-  height: 200px;
+  width: 200px !important;
+  height: 200px !important;
 }
 
 .archive-row {

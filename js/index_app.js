@@ -19,37 +19,47 @@ $(function () {
 });
 
 
-
-// function cover_image(){
-
-// 	var ww = $(window).width();
-
-// 	if (ww < 400){
-// 		var elem = document.createElement("img");
-
-	
-// 		elem.src = "assets/img/yoko_guide.jpg";
-// 		elem.style.position = "absolute";
-// 		elem.className = "cover";
-
-// 		document.getElementById("cover_img").appendChild(elem);
-
-// 	}else if(ww > 300){
-// 		var box = document.getElementById("cover_img");
-// 		var box = box.parentNode;
-// 		box.removeChild(box);
-// 	}
-// }
-// $(document).ready(function(){
-// 	cover_image()
-// });
-// $(window).resize(function(){
-// 	cover_image()
-// });
-
 function add_flash(){
 	var ww = $(window).width();
 	if(ww < 400){
 		$('.icon').addClass('flash');
 	}
 }
+
+var userAgent = window.navigator.userAgent;
+console.log( userAgent );
+
+
+//PC版Chrome,opera,edgeへのでなえれば
+//   var key = document.getElementById('key');
+//   var key_sec = document.getElementById('key_2');
+  
+//     key.classList.add('display_none');
+//     key_sec.classList.remove('display_none');
+
+
+
+//   if (key != ''){
+//     console.log( key );
+// }else{
+//   console.log('取れてないで〜');
+// } 
+
+var key = document.getElementById('key');
+var key_sec = document.getElementById('key_2');
+console.log(key_2);
+var userAgent = window.navigator.userAgent.toLowerCase();
+
+if(userAgent.indexOf('chrome') != -1 ) {
+  
+  key_2.classList.remove('display_none');
+  console.log('クローム ');
+
+}else{
+
+  console.log('指定先違う');
+
+}
+
+// || userAgent.indexOf('chrome') != -1 || userAgent.indexOf('opera') != -1 
+

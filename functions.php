@@ -2,17 +2,28 @@
 
 
 
+//固定ページの定義//
+define('BLOG', 14);
+define('HOME',84);
+define('issue',196);
+
+
+
 /**
-
-* サムネイルの設定
-
+* 投稿に関する記述
 */
+
+
+
+/**
+* サムネイルの設定
+*/
+
    	add_theme_support('post-thumbnails');
 
-////////////////////////////////////////////////////////////////////////
-//////////////////カスタム投稿タイプのアウトドアに関する記述/////////////////////
-////////////////////////////////////////////////////////////////////////
-
+/**
+* 投稿タイプアウトドアの設定
+*/
 function create_post_type() {
 	register_post_type( 'outdoor', // 投稿タイプ名の定義
 	array(
@@ -175,32 +186,6 @@ add_action( 'wp_enqueue_scripts' , 'mystyle' );
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //抜粋の削除
 function new_excerpt_more($more){
     global $post;
@@ -255,34 +240,14 @@ add_action('rewrite_rules_array', 'myUrlRewrite' );
 
 function myPostTypeLink($link, $post ) {
 if ( $post->post_type == 'daiary' ) {
-if ( $cats = get_the_terms( $post->ID, 'tpdairy' ) ) {
-$link = str_replace( '%tpdairy%', current( $cats )->slug, $link );
+if ( $cats = get_the_terms( $post->ID, 'daiary_cat' ) ) {
+$link = str_replace( '%daiary_cat%', current( $cats )->slug, $link );
 }
 }
 return $link;
 }
 add_filter('post_type_link', 'myPostTypeLink', 10, 2 );
 add_filter('post_link', 'myPostTypeLink', 10, 2 );
-
-
-
-
-
-// $parent_term_id = $parent_term[ '2 ' ]; // ターム ID（数値）を取得
-// wp_insert_term(
-//   '商品入荷のお知らせ', // ターム名
-//   'お知らせ', // タクソノミー
-//   array(
-//     'description'=> 'Inform from Staff.',
-//     'parent'=> $parent_term_id
-//   )
-// );
-
-
-//固定ページの定義//
-define('BLOG', 14);
-define('HOME',84);
-define('issue',196);
 
 
 
